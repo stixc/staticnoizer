@@ -34,7 +34,7 @@ func _on_OptionButton_item_selected(index):
 		NoiseType = 1
 		change_sound()
 		$StaticBrown.stop()
-		$StaticBrown.stop()
+		$StaticFilt.stop()
 	elif selc == 2:
 		NoiseType = 2
 		change_sound()
