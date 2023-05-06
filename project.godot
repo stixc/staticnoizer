@@ -16,13 +16,13 @@ run/main_scene="res://app.tscn"
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
-boot_splash/bg_color=Color( 1, 1, 1, 1 )
+boot_splash/bg_color=Color( 0, 0, 0, 1 )
 config/icon="res://icon.png"
 
 [display]
 
 window/size/width=256
-window/size/height=128
+window/size/height=144
 window/size/resizable=false
 
 [gui]

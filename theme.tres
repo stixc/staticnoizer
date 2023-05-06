@@ -1,6 +1,6 @@
 [gd_resource type="Theme" load_steps=3 format=2]
 
-[ext_resource path="res://font/Perfect DOS VGA 437 Win.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://font/WixMadeforText-Bold.ttf" type="DynamicFontData" id=1]
 
 [sub_resource type="DynamicFont" id=1]
 size = 12
@@ -11,5 +11,12 @@ font_data = ExtResource( 1 )
 default_font = SubResource( 1 )
 Button/colors/font_color = Color( 1, 1, 1, 1 )
 Button/colors/font_color_disabled = Color( 0.9, 0.9, 0.9, 0.2 )
-Button/colors/font_color_hover = Color( 0.270588, 0.882353, 0.184314, 1 )
-Button/colors/font_color_pressed = Color( 0.117647, 0.352941, 0.0588235, 1 )
+Button/colors/font_color_focus = Color( 0.94, 0.94, 0.94, 1 )
+Button/colors/font_color_hover = Color( 0.611765, 0.611765, 0.611765, 1 )
+Button/colors/font_color_pressed = Color( 0.219608, 0.219608, 0.219608, 1 )
+Button/constants/hseparation = 2
+Button/styles/disabled = null
+Button/styles/focus = null
+Button/styles/hover = null
+Button/styles/normal = null
+Button/styles/pressed = null

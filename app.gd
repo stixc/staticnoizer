@@ -7,27 +7,39 @@ extends Control
 var NoiseType # what noise has been set
 onready var dropdown = $OptionButton # the dropdown menu
 
-func _ready():
+func _ready() -> void:
 	NoiseType = 0
+	change_sound()
 
 func _process(delta):
+	pass
+
+func change_sound():
 	if NoiseType == 0:
 		$StaticBrown.play()
-	if NoiseType == 1:
+	elif NoiseType == 1:
 		$StaticBrownFilt.play()
-	if NoiseType == 2:
+	elif NoiseType == 2:
 		$StaticFilt.play()
-
 
 func _on_OptionButton_item_selected(index):
 	var selc = index
 	
 	if selc == 0:
 		NoiseType = 0
-	if selc == 1:
+		change_sound()
+		$StaticBrownFilt.stop()
+		$StaticFilt.stop()
+	elif selc == 1:
 		NoiseType = 1
-	if selc == 2:
+		change_sound()
+		$StaticBrown.stop()
+		$StaticBrown.stop()
+	elif selc == 2:
 		NoiseType = 2
+		change_sound()
+		$StaticBrown.stop()
+		$StaticBrownFilt.stop()
 
 
 func _on_Stop_button_up():
@@ -35,8 +47,5 @@ func _on_Stop_button_up():
 	$StaticBrownFilt.stop()
 	$StaticFilt.stop()
 	
-	
-
-
 func _on_Play_button_up():
-	pass # Replace with function body.
+	change_sound()

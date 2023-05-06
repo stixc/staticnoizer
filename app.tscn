@@ -1,37 +1,57 @@
-[gd_scene load_steps=6 format=2]
+[gd_scene load_steps=7 format=2]
 
 [ext_resource path="res://app.gd" type="Script" id=1]
 [ext_resource path="res://theme.tres" type="Theme" id=2]
 [ext_resource path="res://static_brown.ogg" type="AudioStream" id=3]
 [ext_resource path="res://static_filtered.ogg" type="AudioStream" id=4]
 [ext_resource path="res://static_brown_filt.ogg" type="AudioStream" id=5]
+[ext_resource path="res://volume.gd" type="Script" id=6]
 
 [node name="app" type="Control"]
 anchor_right = 1.0
 anchor_bottom = 1.0
 script = ExtResource( 1 )
 
+[node name="ColorRect" type="ColorRect" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0.109804, 0.109804, 0.109804, 1 )
+
 [node name="Label" type="Label" parent="."]
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -60.0
-margin_top = -31.0
-margin_right = 53.0
-margin_bottom = -17.0
+margin_left = -56.5
+margin_top = -64.5
+margin_right = 56.5
+margin_bottom = -47.5
 theme = ExtResource( 2 )
 text = "White Noise Type"
+align = 1
+
+[node name="Label2" type="Label" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -24.5
+margin_top = -7.0
+margin_right = 24.5
+margin_bottom = 7.0
+theme = ExtResource( 2 )
+text = "Volume:"
+align = 1
 
 [node name="Play" type="Button" parent="."]
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -50.0
-margin_top = -25.0
-margin_right = -10.0
-margin_bottom = -7.0
+margin_left = -87.2
+margin_top = -39.0
+margin_right = -8.8
+margin_bottom = -16.0
 theme = ExtResource( 2 )
 text = "PLAY"
 
@@ -40,10 +60,10 @@ anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 10.0
-margin_top = -25.0
-margin_right = 50.0
-margin_bottom = -7.0
+margin_left = 8.8
+margin_top = -39.0
+margin_right = 87.2
+margin_bottom = -16.0
 theme = ExtResource( 2 )
 text = "STOP"
 
@@ -52,24 +72,43 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -62.5
-margin_top = -10.0
-margin_right = 62.5
-margin_bottom = 10.0
+margin_left = -102.0
+margin_top = -42.0
+margin_right = 102.0
+margin_bottom = -22.0
 theme = ExtResource( 2 )
 text = "Brown Noise"
+align = 1
+icon_align = 1
 items = [ "Brown Noise", null, false, 0, null, "Filtered Brown Noise", null, false, 1, null, "Filtered White Noise", null, false, 2, null ]
 selected = 0
 
 [node name="StaticBrownFilt" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 5 )
+bus = "Noises"
 
 [node name="StaticBrown" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 3 )
+bus = "Noises"
 
 [node name="StaticFilt" type="AudioStreamPlayer" parent="."]
 stream = ExtResource( 4 )
+bus = "Noises"
+
+[node name="HSlider" type="HSlider" parent="."]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -114.0
+margin_top = 8.0
+margin_right = 114.0
+margin_bottom = 24.0
+max_value = 1.0
+step = 0.05
+script = ExtResource( 6 )
 
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Stop" to="." method="_on_Stop_button_up"]
 [connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
+[connection signal="value_changed" from="HSlider" to="HSlider" method="_on_HSlider_value_changed"]
