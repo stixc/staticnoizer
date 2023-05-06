@@ -15,4 +15,4 @@ After all that, I made the first iteration of StaticNoizer, known as *WhiteNoize
 ## Contact
 If you want to contact me, feel free to [DM me on Twitter](https://twitter.com/stixc_charles), or [shoot me an email](mailto:contact@stixc.lol).
 Also donations are acceptable too via Ko-Fi.
-<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#242424', 'B0B3KOSEL');kofiwidget2.draw();</script> 
+<a href='https://ko-fi.com/B0B3KOSEL' target='_blank'><img height='36' style='border:0px;height:36px;' src='https://storage.ko-fi.com/cdn/kofi5.png?v=3' border='0' alt='Buy Me a Coffee at ko-fi.com' /></a>
