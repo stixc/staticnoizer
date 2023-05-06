@@ -14,3 +14,5 @@ My solution to all this? **Static,** as in white noise, however I don't use plai
 After all that, I made the first iteration of StaticNoizer, known as *WhiteNoizer,* which was a simple batch script that opens Windows Media Player, and plays a 30min loop of brown noise, in which the crap quality MP3 I made of it takes up 200MB because of it's length. Knowing this, and because it's pretty jank to use Windows Media Player for stuff like this, I decided to code up a superior version in Godot. I was originally wanting to make this in Clickteam Fusion instead, but considering I'm on a Godot roll, and I've seen applications be made with Godot, this will do.
 ## Contact
 If you want to contact me, feel free to [DM me on Twitter](https://twitter.com/stixc_charles), or [shoot me an email](mailto:contact@stixc.lol).
+Also donations are acceptable too via Ko-Fi.
+<script type='text/javascript' src='https://storage.ko-fi.com/cdn/widget/Widget_2.js'></script><script type='text/javascript'>kofiwidget2.init('Support Me on Ko-fi', '#242424', 'B0B3KOSEL');kofiwidget2.draw();</script> 
