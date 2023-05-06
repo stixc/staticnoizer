@@ -1,4 +1,5 @@
 # StaticNoizer
+![Screenshot of StaticNoizer.](https://files.catbox.moe/zafagl.png)
 A simple brown/white noise player made with Godot. The intention is for people to be relaxed, for those who are on their computer, and have loud things around them that can drive them into insanity.
 ## Installation
 Download the specified binary from the releases tab, and put it somewhere where you can open it easily. I recommend putting it in C: (example: C:/StaticNoizer), and while your at it, make a shortcut to StaticNoizer, and put it on both your desktop (and/or taskbar), and C:\Users\(Your Username)\AppData\Roaming\Microsoft\Windows\Start Menu\Programs as well. Click on StaticNoizer.exe to open it, controls are super simple to understand.
