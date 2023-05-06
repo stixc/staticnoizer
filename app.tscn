@@ -122,7 +122,7 @@ margin_right = 137.0
 theme = ExtResource( 2 )
 custom_colors/font_color = Color( 1, 1, 1, 0.2 )
 custom_fonts/font = SubResource( 1 )
-text = "v1.2"
+text = "v1.3"
 
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Stop" to="." method="_on_Stop_button_up"]
