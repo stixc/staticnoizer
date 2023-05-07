@@ -1,16 +1,18 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://app.gd" type="Script" id=1]
-[ext_resource path="res://theme.tres" type="Theme" id=2]
+[ext_resource path="res://new_theme.tres" type="Theme" id=2]
 [ext_resource path="res://static_brown.ogg" type="AudioStream" id=3]
 [ext_resource path="res://static_filtered.ogg" type="AudioStream" id=4]
 [ext_resource path="res://static_brown_filt.ogg" type="AudioStream" id=5]
 [ext_resource path="res://volume.gd" type="Script" id=6]
-[ext_resource path="res://font/WixMadeforText-Bold.ttf" type="DynamicFontData" id=7]
+[ext_resource path="res://about.png" type="Texture" id=7]
+[ext_resource path="res://font/WixMadeforText-Bold.ttf" type="DynamicFontData" id=8]
 
 [sub_resource type="DynamicFont" id=1]
-size = 10
-font_data = ExtResource( 7 )
+size = 12
+extra_spacing_bottom = -6
+font_data = ExtResource( 8 )
 
 [node name="app" type="Control"]
 anchor_right = 1.0
@@ -113,18 +115,82 @@ max_value = 1.0
 step = 0.05
 script = ExtResource( 6 )
 
-[node name="VersionLabel" type="Label" parent="."]
+[node name="AboutButton" type="Button" parent="."]
+anchor_left = 1.0
 anchor_top = 1.0
+anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = 2.0
-margin_top = -14.0
-margin_right = 137.0
+margin_left = -24.0
+margin_top = -23.0
+margin_right = 1.0
+margin_bottom = 1.0
+icon = ExtResource( 7 )
+flat = true
+icon_align = 1
+expand_icon = true
+
+[node name="about_box" type="Control" parent="."]
+visible = false
+anchor_right = 1.0
+anchor_bottom = 1.0
+
+[node name="AboutBG" type="ColorRect" parent="about_box"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+color = Color( 0, 0, 0, 0.815686 )
+
+[node name="line" type="ColorRect" parent="about_box"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -120.0
+margin_top = -25.0
+margin_right = 112.0
+margin_bottom = -24.0
+
+[node name="AppInfo" type="Label" parent="about_box"]
+margin_left = 8.0
+margin_top = 8.0
+margin_right = 244.0
+margin_bottom = 49.0
 theme = ExtResource( 2 )
-custom_colors/font_color = Color( 1, 1, 1, 0.2 )
+text = "StaticNoizer - v1.4
+Created by stixc"
+
+[node name="AppInfo2" type="Label" parent="about_box"]
+margin_left = 8.0
+margin_top = 48.0
+margin_right = 244.0
+margin_bottom = 89.0
+theme = ExtResource( 2 )
 custom_fonts/font = SubResource( 1 )
-text = "v1.3"
+text = "For those who want to feel relaxed and
+not be in a state of auditory pain."
+
+[node name="AppInfo3" type="Label" parent="about_box"]
+margin_left = 8.0
+margin_top = 120.0
+margin_right = 41.0
+margin_bottom = 137.0
+theme = ExtResource( 2 )
+text = "2023"
+
+[node name="CloseAboutButton" type="Button" parent="about_box"]
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+margin_left = -22.0
+margin_top = -31.0
+margin_right = 22.0
+margin_bottom = -8.0
+theme = ExtResource( 2 )
+text = "Close"
 
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]
 [connection signal="button_up" from="Stop" to="." method="_on_Stop_button_up"]
 [connection signal="item_selected" from="OptionButton" to="." method="_on_OptionButton_item_selected"]
 [connection signal="value_changed" from="HSlider" to="HSlider" method="_on_HSlider_value_changed"]
+[connection signal="pressed" from="AboutButton" to="." method="_on_AboutButton_pressed"]
+[connection signal="pressed" from="about_box/CloseAboutButton" to="." method="_on_CloseAboutButton_pressed"]

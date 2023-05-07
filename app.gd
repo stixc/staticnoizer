@@ -49,3 +49,10 @@ func _on_Stop_button_up():
 	
 func _on_Play_button_up():
 	change_sound()
+
+
+func _on_AboutButton_pressed():
+	$about_box.show()
+
+func _on_CloseAboutButton_pressed():
+	$about_box.hide()
