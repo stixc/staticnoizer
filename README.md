@@ -1,5 +1,5 @@
 # StaticNoizer
-![Screenshot of StaticNoizer.](https://files.catbox.moe/wugj4c.png)
+![Screenshot of StaticNoizer.](https://files.catbox.moe/y0b27a.png)
 
 A simple brown/white noise player made with Godot. The intention is for people to be relaxed, for those who are on their computer, and have loud things around them that can drive them into insanity.
 ## Installation
