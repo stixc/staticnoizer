@@ -3,6 +3,9 @@ extends Control
 # 0 = Brown Noise
 # 1 = Filt. Brown Noise
 # 2 = Filt. White Noise
+# 3 = Ocean
+# 4 = River
+# 5 = Heavy Rain
 
 var NoiseType # what noise has been set
 onready var dropdown = $OptionButton # the dropdown menu
@@ -21,6 +24,12 @@ func change_sound():
 		$StaticBrownFilt.play()
 	elif NoiseType == 2:
 		$StaticFilt.play()
+	elif NoiseType == 3:
+		$Ocean.play()
+	elif NoiseType == 4:
+		$River.play()
+	elif NoiseType == 5:
+		$Rain.play()
 
 func _on_OptionButton_item_selected(index):
 	var selc = index
@@ -30,22 +39,58 @@ func _on_OptionButton_item_selected(index):
 		change_sound()
 		$StaticBrownFilt.stop()
 		$StaticFilt.stop()
+		$Ocean.stop()
+		$Rain.stop()
+		$River.stop()
 	elif selc == 1:
 		NoiseType = 1
 		change_sound()
 		$StaticBrown.stop()
 		$StaticFilt.stop()
+		$Ocean.stop()
+		$Rain.stop()
+		$River.stop()
 	elif selc == 2:
 		NoiseType = 2
 		change_sound()
 		$StaticBrown.stop()
 		$StaticBrownFilt.stop()
+		$Ocean.stop()
+		$Rain.stop()
+		$River.stop()
+	elif selc == 3:			# ocean
+		NoiseType = 3
+		change_sound()
+		$StaticFilt.stop()
+		$StaticBrown.stop()
+		$StaticBrownFilt.stop()
+		$Rain.stop()
+		$River.stop()
+	elif selc == 4:			# river
+		NoiseType = 4
+		change_sound()
+		$StaticFilt.stop()
+		$StaticBrown.stop()
+		$StaticBrownFilt.stop()
+		$Rain.stop()
+		$Ocean.stop()
+	elif selc == 5:			# rain
+		NoiseType = 5
+		change_sound()
+		$StaticFilt.stop()
+		$StaticBrown.stop()
+		$StaticBrownFilt.stop()
+		$Ocean.stop()
+		$River.stop()
 
 
 func _on_Stop_button_up():
 	$StaticBrown.stop()
 	$StaticBrownFilt.stop()
 	$StaticFilt.stop()
+	$Ocean.stop()
+	$Rain.stop()
+	$River.stop()
 	
 func _on_Play_button_up():
 	change_sound()
