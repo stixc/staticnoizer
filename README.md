@@ -12,6 +12,8 @@ You need Godot 3.5.2 in order to compile StaticNoizer. Clone the repository, I r
 My solution to all this? **Static,** as in white noise, however I don't use plain white noise, as it's extremely loud and can cause hearing damage. The real solution is filtered white noise, or brown noise. Now there are white/brown noise generator apps out there, but none are simple or non-bloaty as mine. Most apps I find are mostly exclusive to the Microsoft Store, and most of them are just crummy YouTube videos that have a fade out for no reason, combined with microtransactions. That won't cut it, so I needed to make my own.<br>
 <br>
 After all that, I made the first iteration of StaticNoizer, known as *WhiteNoizer,* which was a simple batch script that opens Windows Media Player, and plays a 30min loop of brown noise, in which the crap quality MP3 I made of it takes up 200MB because of it's length. Knowing this, and because it's pretty jank to use Windows Media Player for stuff like this, I decided to code up a superior version in Godot. I was originally wanting to make this in Clickteam Fusion instead, but considering I'm on a Godot roll, and I've seen applications be made with Godot, this will do.
+## Credits
+stixc - Everything
 ## Contact
 If you want to contact me, feel free to [shoot me an email](mailto:contact@stixc.lol).
 <br>
