@@ -16,7 +16,6 @@ After all that, I made the first iteration of StaticNoizer, known as *WhiteNoize
 - Refine the code so it's not a sloppy mess and is minimal as possible to make it less confusing, taxing, etc
 - Due to recent window size change, the possibility of filling the empty space with an image to represent a sound is needed
 - More sounds????
-<br>
 ## Credits
 stixc - Everything
 <br>
