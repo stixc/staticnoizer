@@ -15,11 +15,17 @@ After all that, I made the first iteration of StaticNoizer, known as *WhiteNoize
 ## Credits
 stixc - Everything
 <br>
-Eelke (via Freesound) - Ocean Sound Loop
+Freesound Audio Credits:
 <br>
-HerbertBoland (via Freesound) - River Sound Loop
+reklamacja - Ocean Sound Loop
 <br>
-GammaScorpii (via Freesound) - Heavy Rain Sound Loop
+HerbertBoland - River Sound Loop
+<br>
+GammaScorpii - Heavy Rain Sound Loop
+<br>
+RugetMuller - Air Conditioner Loop
+<br>
+drumuse - Box Fan Loop
 <br>
 ## Contact
 If you want to contact me, feel free to [shoot me an email](mailto:contact@stixc.lol).

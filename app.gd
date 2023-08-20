@@ -6,6 +6,8 @@ extends Control
 # 3 = Ocean
 # 4 = River
 # 5 = Heavy Rain
+# 6 = Air Conditioner
+# 7 = Box Fan
 
 var NoiseType # what noise has been set
 onready var dropdown = $OptionButton # the dropdown menu
@@ -16,6 +18,11 @@ func _ready() -> void:
 
 func _process(delta):
 	pass
+
+# TODO: HOLY THIS CODE SUCKS - EFFICIENCY NOW
+# I need to figure out how to make it so that it's a set variable
+# or something along the lines of that instead of just YandreDev-ing it
+# and just having long stupid lines like what you are about to witness:
 
 func change_sound():
 	if NoiseType == 0:
@@ -30,6 +37,10 @@ func change_sound():
 		$River.play()
 	elif NoiseType == 5:
 		$Rain.play()
+	elif NoiseType == 6:
+		$AirCon.play()
+	elif NoiseType == 7:
+		$BoxFan.play()
 
 func _on_OptionButton_item_selected(index):
 	var selc = index
@@ -42,6 +53,8 @@ func _on_OptionButton_item_selected(index):
 		$Ocean.stop()
 		$Rain.stop()
 		$River.stop()
+		$AirCon.stop()
+		$BoxFan.stop()
 	elif selc == 1:
 		NoiseType = 1
 		change_sound()
@@ -50,6 +63,8 @@ func _on_OptionButton_item_selected(index):
 		$Ocean.stop()
 		$Rain.stop()
 		$River.stop()
+		$AirCon.stop()
+		$BoxFan.stop()
 	elif selc == 2:
 		NoiseType = 2
 		change_sound()
@@ -58,6 +73,8 @@ func _on_OptionButton_item_selected(index):
 		$Ocean.stop()
 		$Rain.stop()
 		$River.stop()
+		$AirCon.stop()
+		$BoxFan.stop()
 	elif selc == 3:			# ocean
 		NoiseType = 3
 		change_sound()
@@ -66,6 +83,8 @@ func _on_OptionButton_item_selected(index):
 		$StaticBrownFilt.stop()
 		$Rain.stop()
 		$River.stop()
+		$AirCon.stop()
+		$BoxFan.stop()
 	elif selc == 4:			# river
 		NoiseType = 4
 		change_sound()
@@ -74,6 +93,8 @@ func _on_OptionButton_item_selected(index):
 		$StaticBrownFilt.stop()
 		$Rain.stop()
 		$Ocean.stop()
+		$AirCon.stop()
+		$BoxFan.stop()
 	elif selc == 5:			# rain
 		NoiseType = 5
 		change_sound()
@@ -82,6 +103,28 @@ func _on_OptionButton_item_selected(index):
 		$StaticBrownFilt.stop()
 		$Ocean.stop()
 		$River.stop()
+		$AirCon.stop()
+		$BoxFan.stop()
+	elif selc == 6:
+		NoiseType = 6
+		change_sound()
+		$StaticFilt.stop()
+		$StaticBrown.stop()
+		$StaticBrownFilt.stop()
+		$Ocean.stop()
+		$River.stop()
+		$Rain.stop()
+		$BoxFan.stop()
+	elif selc == 7:
+		NoiseType = 7
+		change_sound()
+		$StaticFilt.stop()
+		$StaticBrown.stop()
+		$StaticBrownFilt.stop()
+		$Ocean.stop()
+		$River.stop()
+		$Rain.stop()
+		$AirCon.stop()
 
 
 func _on_Stop_button_up():
@@ -91,6 +134,8 @@ func _on_Stop_button_up():
 	$Ocean.stop()
 	$Rain.stop()
 	$River.stop()
+	$AirCon.stop()
+	$BoxFan.stop()
 	
 func _on_Play_button_up():
 	change_sound()
