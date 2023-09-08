@@ -34,8 +34,6 @@ RugetMuller - Air Conditioner Loop
 <br>
 drumuse - Box Fan Loop
 <br>
-Sony - PlayStation 2 Menu Sounds
-<br>
 ## Contact
 If you want to contact me, feel free to [shoot me an email](mailto:contact@stixc.lol).
 <br>
