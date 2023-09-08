@@ -2,6 +2,9 @@
 ![Screenshot of StaticNoizer v1.6](https://files.catbox.moe/5ylrz1.png)
 
 A simple brown/white noise player made with Godot. The intention is for people to be relaxed, for those who are on their computer, and have loud things around them that can drive them into insanity.
+## itch.io Release!
+You can buy StaticNoizer off itch.io! Note that StaticNoizer will still be free on GitHub, but it's paid on itch.io just for the sake of donations.
+<a href="https://stixc-charles.itch.io/staticnoizer">StaticNoizer on itch.io</a>
 ## Installation
 Download the specified binary from the releases tab, and put it somewhere where you can open it easily. I recommend putting it in C: (example: C:/StaticNoizer), and while your at it, make a shortcut to StaticNoizer, and put it on both your desktop (and/or taskbar), and C:\Users\(Your Username)\AppData\Roaming\Microsoft\Windows\Start Menu\Programs as well. Click on StaticNoizer.exe to open it, controls are super simple to understand.
 ## Compiling
@@ -30,6 +33,8 @@ GammaScorpii - Heavy Rain Sound Loop
 RugetMuller - Air Conditioner Loop
 <br>
 drumuse - Box Fan Loop
+<br>
+Sony - PlayStation 2 Menu Sounds
 <br>
 ## Contact
 If you want to contact me, feel free to [shoot me an email](mailto:contact@stixc.lol).
