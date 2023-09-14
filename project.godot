@@ -12,7 +12,7 @@ config_version=4
 
 config/name="StaticNoizer"
 config/description="A simple white noise player app"
-run/main_scene="res://app.tscn"
+run/main_scene="res://scenes/app.tscn"
 boot_splash/show_image=false
 boot_splash/fullsize=false
 boot_splash/use_filter=false
