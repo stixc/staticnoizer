@@ -17,6 +17,7 @@ onready var datetext = $about_box/celebrate/datetext
 onready var stixc_figure = $about_box/celebrate/stixcparty
 var audio_nodes: Array = []
 var current_date = OS.get_datetime()
+var is_celebrating = false
 
 func _ready() -> void:
 	for i in range(get_child_count()):
@@ -24,13 +25,13 @@ func _ready() -> void:
 		if child is AudioStreamPlayer:
 			audio_nodes.append(child)
 
+	if is_celebrating == true:
+		$about_box/AppInfo2.hide()
+	elif is_celebrating == false:
+		$about_box/AppInfo2.show()
+
 	date_check()
 	change_sound()
-
-	# NOTE: Images related to sound is still WIP, still need to figure out how this will work
-	# TODO: make this work
-	$ImageArea.hide()
-
 
 func _on_OptionButton_item_selected(index: int) -> void:
 	selected_noise = index
@@ -56,6 +57,7 @@ func date_check() -> void:
 		var app_release_date = 2022
 		var current_year = current_date.year
 		var app_age = current_year - app_release_date
+		is_celebrating = true
 
 		datetext.set_text("Happy Birthday StaticNoizer!\nThe first commit was " + str(app_age) + " year(s) ago!")
 	# stixc's birthday
@@ -65,6 +67,7 @@ func date_check() -> void:
 		var stixc_birth_year = 2001
 		var current_year = current_date.year
 		var stixc_age = current_year - stixc_birth_year
+		is_celebrating = true
 
 		datetext.set_text("Happy Birthday stixc!\nstixc is now " + str(stixc_age) + " years old!")
 	# Halloween
@@ -72,16 +75,19 @@ func date_check() -> void:
 		celebrate_area.show()
 		stixc_figure.hide()
 		datetext.set_text("Happy Halloween!\nThis app is NOT haunted. No worries.")
+		is_celebrating = true
 	# Christmas
 	elif (current_date.month == 12 && current_date.day == 24) or (current_date.month == 12 && current_date.day == 25):
 		celebrate_area.show()
 		stixc_figure.hide()
 		datetext.set_text("Merry Christmas!")
+		is_celebrating = true
 	# New Years
 	elif current_date.month == 1 && current_date.day == 1:
 		celebrate_area.show()
 		stixc_figure.show()
 		var current_year = current_date.year
+		is_celebrating = true
 
 		datetext.set_text("Happy New Year!\nIt is now " + str(current_year) + "!")
 	# Valentine's Day
@@ -89,13 +95,16 @@ func date_check() -> void:
 		celebrate_area.show()
 		stixc_figure.hide()
 		datetext.set_text("Happy Valentine's Day!")
+		is_celebrating = true
 	# Pride Month
 	elif current_date.month == 6:
 		celebrate_area.show()
 		datetext.set_text("Happy Pride Month!\nYou are loved and amazing!")
+		is_celebrating = true
 	else:
 		celebrate_area.hide()
 		stixc_figure.hide()
+		is_celebrating = false
 
 func _on_Stop_button_up() -> void:
 	stop_all_sounds()

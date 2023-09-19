@@ -22,7 +22,7 @@ config/icon="res://icon.png"
 [display]
 
 window/size/width=256
-window/size/height=256
+window/size/height=160
 window/size/resizable=false
 
 [gui]
