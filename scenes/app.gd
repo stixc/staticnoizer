@@ -26,9 +26,9 @@ func _ready() -> void:
 			audio_nodes.append(child)
 
 	if is_celebrating == true:
-		$about_box/AppInfo2.hide()
+		$about_box/AppDesc.hide()
 	elif is_celebrating == false:
-		$about_box/AppInfo2.show()
+		$about_box/AppDesc.show()
 
 	date_check()
 	change_sound()
