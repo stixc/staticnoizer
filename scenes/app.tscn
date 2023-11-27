@@ -1,244 +1,362 @@
-[gd_scene load_steps=18 format=2]
+[gd_scene load_steps=18 format=3 uid="uid://ccjfjor4ruswi"]
 
-[ext_resource path="res://scenes/app.gd" type="Script" id=1]
-[ext_resource path="res://new_theme.tres" type="Theme" id=2]
-[ext_resource path="res://sounds/static_brown.ogg" type="AudioStream" id=3]
-[ext_resource path="res://sounds/static_filtered.ogg" type="AudioStream" id=4]
-[ext_resource path="res://sounds/static_brown_filt.ogg" type="AudioStream" id=5]
-[ext_resource path="res://scenes/volume.gd" type="Script" id=6]
-[ext_resource path="res://about.png" type="Texture" id=7]
-[ext_resource path="res://font/WixMadeforText-Bold.ttf" type="DynamicFontData" id=8]
-[ext_resource path="res://sounds/river.ogg" type="AudioStream" id=9]
-[ext_resource path="res://sounds/heavy_rain.ogg" type="AudioStream" id=10]
-[ext_resource path="res://sounds/ocean.ogg" type="AudioStream" id=11]
-[ext_resource path="res://sounds/boxfan.ogg" type="AudioStream" id=12]
-[ext_resource path="res://sounds/aircon.ogg" type="AudioStream" id=13]
-[ext_resource path="res://birthday-popup.png" type="Texture" id=14]
-[ext_resource path="res://sounds/digispace.ogg" type="AudioStream" id=15]
+[ext_resource type="Script" path="res://scenes/app.gd" id="1"]
+[ext_resource type="Theme" uid="uid://c7t2r5i3x5t0" path="res://new_theme.tres" id="2"]
+[ext_resource type="AudioStream" uid="uid://c1t8qynpntlkp" path="res://sounds/static_brown.ogg" id="3"]
+[ext_resource type="AudioStream" uid="uid://qf0afftyqqyt" path="res://sounds/static_filtered.ogg" id="4"]
+[ext_resource type="AudioStream" uid="uid://pkqtcya352kf" path="res://sounds/static_brown_filt.ogg" id="5"]
+[ext_resource type="Script" path="res://scenes/volume.gd" id="6"]
+[ext_resource type="Texture2D" uid="uid://bfurpgbhrv1u1" path="res://about.png" id="7"]
+[ext_resource type="FontFile" uid="uid://y2brd8hosr31" path="res://font/WixMadeforText-Bold.ttf" id="8"]
+[ext_resource type="AudioStream" uid="uid://j0rvbux1cotp" path="res://sounds/river.ogg" id="9"]
+[ext_resource type="AudioStream" uid="uid://b1fe1r45eemer" path="res://sounds/heavy_rain.ogg" id="10"]
+[ext_resource type="AudioStream" uid="uid://bhv76nvhk8rmi" path="res://sounds/ocean.ogg" id="11"]
+[ext_resource type="AudioStream" uid="uid://dq8nllhc1n8ov" path="res://sounds/boxfan.ogg" id="12"]
+[ext_resource type="AudioStream" uid="uid://bcbepmrreove6" path="res://sounds/aircon.ogg" id="13"]
+[ext_resource type="Texture2D" uid="uid://du8ifcr3fwpgo" path="res://birthday-popup.png" id="14"]
+[ext_resource type="AudioStream" uid="uid://cxa0vo1vcfwu2" path="res://sounds/digispace.ogg" id="15"]
 
-[sub_resource type="DynamicFont" id=2]
-size = 10
-use_mipmaps = true
-use_filter = true
-font_data = ExtResource( 8 )
+[sub_resource type="FontFile" id="2"]
+fallbacks = Array[Font]([ExtResource("8")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/12/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/11/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/11/0 = Vector2(0, 0)
 
-[sub_resource type="DynamicFont" id=1]
-size = 10
-use_filter = true
-extra_spacing_bottom = -6
-font_data = ExtResource( 8 )
+[sub_resource type="FontFile" id="1"]
+fallbacks = Array[Font]([ExtResource("8")])
+cache/0/16/0/ascent = 0.0
+cache/0/16/0/descent = 0.0
+cache/0/16/0/underline_position = 0.0
+cache/0/16/0/underline_thickness = 0.0
+cache/0/16/0/scale = 1.0
+cache/0/16/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/16/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/16/0/glyphs/0/size = Vector2(0, 0)
+cache/0/16/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/16/0/glyphs/0/texture_idx = -1
+cache/0/16/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/16/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/12/0/ascent = 0.0
+cache/0/12/0/descent = 0.0
+cache/0/12/0/underline_position = 0.0
+cache/0/12/0/underline_thickness = 0.0
+cache/0/12/0/scale = 1.0
+cache/0/12/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/12/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/12/0/glyphs/0/size = Vector2(0, 0)
+cache/0/12/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/12/0/glyphs/0/texture_idx = -1
+cache/0/12/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/12/0/kerning_overrides/11/0 = Vector2(0, 0)
+cache/0/11/0/ascent = 0.0
+cache/0/11/0/descent = 0.0
+cache/0/11/0/underline_position = 0.0
+cache/0/11/0/underline_thickness = 0.0
+cache/0/11/0/scale = 1.0
+cache/0/11/0/glyphs/0/advance = Vector2(0, 0)
+cache/0/11/0/glyphs/0/offset = Vector2(0, 0)
+cache/0/11/0/glyphs/0/size = Vector2(0, 0)
+cache/0/11/0/glyphs/0/uv_rect = Rect2(0, 0, 0, 0)
+cache/0/11/0/glyphs/0/texture_idx = -1
+cache/0/11/0/kerning_overrides/16/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/12/0 = Vector2(0, 0)
+cache/0/11/0/kerning_overrides/11/0 = Vector2(0, 0)
 
 [node name="app" type="Control"]
+layout_mode = 3
+anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-script = ExtResource( 1 )
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1")
 
 [node name="BG" type="ColorRect" parent="."]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0.109804, 0.109804, 0.109804, 1 )
+color = Color(0.196078, 0.196078, 0.196078, 1)
 
 [node name="NoiseLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -56.5
-margin_top = -64.5
-margin_right = 56.5
-margin_bottom = -47.5
-theme = ExtResource( 2 )
+offset_left = -56.5
+offset_top = -68.5
+offset_right = 56.5
+offset_bottom = -43.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2")
 text = "Noise Type:"
-align = 1
+horizontal_alignment = 1
 
 [node name="VolumeLabel" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -24.5
-margin_top = -8.0
-margin_right = 24.5
-margin_bottom = 9.0
-theme = ExtResource( 2 )
+offset_left = -31.5
+offset_top = -10.5
+offset_right = 31.5
+offset_bottom = 14.5
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2")
 text = "Volume:"
-align = 1
+horizontal_alignment = 1
 
 [node name="Play" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -87.2
-margin_top = -39.0
-margin_right = -8.8
-margin_bottom = -16.0
-theme = ExtResource( 2 )
+offset_left = -87.2
+offset_top = -46.0
+offset_right = -8.8
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2")
 text = "PLAY"
 
 [node name="Stop" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = 8.8
-margin_top = -39.0
-margin_right = 87.2
-margin_bottom = -16.0
-theme = ExtResource( 2 )
+offset_left = 8.8
+offset_top = -46.0
+offset_right = 87.2
+offset_bottom = -16.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2")
 text = "STOP"
 
 [node name="OptionButton" type="OptionButton" parent="."]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -102.0
-margin_top = -44.0
-margin_right = 102.0
-margin_bottom = -21.0
-theme = ExtResource( 2 )
-text = "Brown Noise"
-align = 1
-icon_align = 1
-items = [ "Brown Noise", null, false, 0, null, "Filtered Brown Noise", null, false, 1, null, "Filtered White Noise", null, false, 2, null, "Ocean", null, false, 3, null, "River", null, false, 4, null, "Heavy Rain", null, false, 5, null, "Air Conditioner", null, false, 6, null, "Box Fan", null, false, 7, null, "DigiSpace", null, false, 8, null ]
-selected = 0
+offset_left = -102.0
+offset_top = -42.0
+offset_right = 102.0
+offset_bottom = -12.0
+grow_horizontal = 2
+grow_vertical = 2
+theme = ExtResource("2")
+icon_alignment = 1
+item_count = 9
+popup/item_0/text = "Brown Noise"
+popup/item_0/id = 0
+popup/item_1/text = "Filtered Brown Noise"
+popup/item_1/id = 1
+popup/item_2/text = "Filtered White Noise"
+popup/item_2/id = 2
+popup/item_3/text = "Ocean Waves"
+popup/item_3/id = 3
+popup/item_4/text = "River Running"
+popup/item_4/id = 4
+popup/item_5/text = "Rain Pouring"
+popup/item_5/id = 5
+popup/item_6/text = "Air Conditioner"
+popup/item_6/id = 6
+popup/item_7/text = "Box Fan"
+popup/item_7/id = 7
+popup/item_8/text = "DigiSpace"
+popup/item_8/id = 8
 
 [node name="HSlider" type="HSlider" parent="."]
+layout_mode = 0
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -114.0
-margin_top = 11.0
-margin_right = 114.0
-margin_bottom = 27.0
+offset_left = -114.0
+offset_top = 11.0
+offset_right = 114.0
+offset_bottom = 27.0
 max_value = 1.0
 step = 0.03
-script = ExtResource( 6 )
+script = ExtResource("6")
 
 [node name="AboutButton" type="Button" parent="."]
+layout_mode = 0
 anchor_left = 1.0
 anchor_top = 1.0
 anchor_right = 1.0
 anchor_bottom = 1.0
-margin_left = -30.0
-margin_top = -29.0
-margin_right = -3.0
-margin_bottom = -3.0
-icon = ExtResource( 7 )
+offset_left = -30.0
+offset_top = -29.0
+offset_right = -3.0
+offset_bottom = -3.0
+icon = ExtResource("7")
 flat = true
-icon_align = 1
+icon_alignment = 1
 expand_icon = true
 
 [node name="StaticBrown" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 3 )
-bus = "Noises"
+stream = ExtResource("3")
+bus = &"Noises"
 
 [node name="StaticBrownFilt" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 5 )
-bus = "Noises"
+stream = ExtResource("5")
+bus = &"Noises"
 
 [node name="StaticFilt" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 4 )
-bus = "Noises"
+stream = ExtResource("4")
+bus = &"Noises"
 
 [node name="Ocean" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 11 )
-bus = "Noises"
+stream = ExtResource("11")
+bus = &"Noises"
 
 [node name="River" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 9 )
+stream = ExtResource("9")
 volume_db = -3.0
-bus = "Noises"
+bus = &"Noises"
 
 [node name="Rain" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 10 )
+stream = ExtResource("10")
 volume_db = -2.0
-bus = "Noises"
+bus = &"Noises"
 
 [node name="AirCon" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 13 )
-bus = "Noises"
+stream = ExtResource("13")
+bus = &"Noises"
 
 [node name="BoxFan" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 12 )
-bus = "Noises"
+stream = ExtResource("12")
+bus = &"Noises"
 
 [node name="DigiSpace" type="AudioStreamPlayer" parent="."]
-stream = ExtResource( 15 )
-bus = "Noises"
+stream = ExtResource("15")
+bus = &"Noises"
 
 [node name="about_box" type="Control" parent="."]
 visible = false
+anchors_preset = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
 [node name="AboutBG" type="ColorRect" parent="about_box"]
+layout_mode = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
-color = Color( 0, 0, 0, 0.815686 )
+color = Color(0, 0, 0, 0.894118)
 
 [node name="celebrate" type="Control" parent="about_box"]
 visible = false
+anchors_preset = 0
 anchor_right = 1.0
 anchor_bottom = 1.0
 
-[node name="stixcparty" type="Sprite" parent="about_box/celebrate"]
+[node name="stixcparty" type="Sprite2D" parent="about_box/celebrate"]
 visible = false
-modulate = Color( 1, 1, 1, 0.4 )
-position = Vector2( 206.892, 108.75 )
+modulate = Color(1, 1, 1, 0.4)
+position = Vector2(222.142, 132.5)
 rotation = -0.261799
-scale = Vector2( 0.160981, 0.160981 )
-texture = ExtResource( 14 )
+scale = Vector2(0.163642, 0.169569)
+texture = ExtResource("14")
 
 [node name="datetext" type="Label" parent="about_box/celebrate"]
+layout_mode = 1
+anchors_preset = 4
 anchor_top = 0.5
 anchor_bottom = 0.5
-margin_left = 8.0
-margin_top = -26.0
-margin_right = 236.0
-margin_bottom = 35.0
-theme = ExtResource( 2 )
-custom_fonts/font = SubResource( 2 )
+offset_left = 8.0
+offset_top = -29.0
+offset_right = 236.0
+offset_bottom = 32.0
+grow_vertical = 2
+theme = ExtResource("2")
+theme_override_fonts/font = SubResource("2")
+theme_override_font_sizes/font_size = 11
 text = "Happy Birthday StaticNoizer!
 The first commit was s year(s) ago!"
 
 [node name="line" type="ColorRect" parent="about_box"]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -120.0
-margin_top = 39.0
-margin_right = 112.0
-margin_bottom = 40.0
+offset_left = -120.0
+offset_top = 28.0
+offset_right = 112.0
+offset_bottom = 29.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="line2" type="ColorRect" parent="about_box"]
+layout_mode = 1
+anchors_preset = 8
 anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-margin_left = -120.0
-margin_top = -29.0
-margin_right = 112.0
-margin_bottom = -28.0
+offset_left = -120.0
+offset_top = -31.0
+offset_right = 112.0
+offset_bottom = -30.0
+grow_horizontal = 2
+grow_vertical = 2
 
 [node name="AppInfo" type="Label" parent="about_box"]
-margin_left = 8.0
-margin_top = 8.0
-margin_right = 244.0
-margin_bottom = 49.0
-theme = ExtResource( 2 )
-text = "StaticNoizer - v1.8a
+layout_mode = 0
+offset_left = 8.0
+offset_top = 6.0
+offset_right = 244.0
+offset_bottom = 47.0
+theme = ExtResource("2")
+theme_override_font_sizes/font_size = 12
+text = "StaticNoizer - v2.0
 Created by stixc (contact@stixc.lol)"
 
 [node name="AppDesc" type="Label" parent="about_box"]
-margin_left = 8.0
-margin_top = 55.0
-margin_right = 241.0
-margin_bottom = 128.0
-custom_fonts/font = SubResource( 1 )
+layout_mode = 0
+offset_left = 8.0
+offset_top = 51.0
+offset_right = 241.0
+offset_bottom = 134.0
+theme_override_fonts/font = SubResource("1")
+theme_override_font_sizes/font_size = 11
 text = "A simple noise player app to calm
 yourself down, for work, etc.
 
@@ -246,23 +364,30 @@ All is made by stixc
 Sounds sourced from Freesound"
 
 [node name="AppYear" type="Label" parent="about_box"]
-margin_left = 8.0
-margin_top = 136.0
-margin_right = 41.0
-margin_bottom = 153.0
-theme = ExtResource( 2 )
+layout_mode = 0
+offset_left = 8.0
+offset_top = 134.0
+offset_right = 41.0
+offset_bottom = 154.0
+theme = ExtResource("2")
+theme_override_font_sizes/font_size = 12
 text = "2023"
 
 [node name="CloseAboutButton" type="Button" parent="about_box"]
+layout_mode = 1
+anchors_preset = 7
 anchor_left = 0.5
 anchor_top = 1.0
 anchor_right = 0.5
 anchor_bottom = 1.0
-margin_left = -22.0
-margin_top = -31.0
-margin_right = 22.0
-margin_bottom = -8.0
-theme = ExtResource( 2 )
+offset_left = -20.5
+offset_top = -32.0
+offset_right = 20.5
+offset_bottom = -7.0
+grow_horizontal = 2
+grow_vertical = 0
+theme = ExtResource("2")
+theme_override_font_sizes/font_size = 12
 text = "Close"
 
 [connection signal="button_up" from="Play" to="." method="_on_Play_button_up"]

@@ -11,12 +11,12 @@ const NOISE_BOX_FAN = 7
 const NOISE_DIGISPACE = 8 
 
 var selected_noise = NOISE_BROWN
-onready var dropdown: OptionButton = $OptionButton
-onready var celebrate_area = $about_box/celebrate
-onready var datetext = $about_box/celebrate/datetext
-onready var stixc_figure = $about_box/celebrate/stixcparty
+@onready var dropdown: OptionButton = $OptionButton
+@onready var celebrate_area = $about_box/celebrate
+@onready var datetext = $about_box/celebrate/datetext
+@onready var stixc_figure = $about_box/celebrate/stixcparty
 var audio_nodes: Array = []
-var current_date = OS.get_datetime()
+var current_date = Time.get_datetime_dict_from_system()
 var is_celebrating = false
 
 func _ready() -> void:
@@ -24,11 +24,6 @@ func _ready() -> void:
 		var child = get_child(i)
 		if child is AudioStreamPlayer:
 			audio_nodes.append(child)
-
-	if is_celebrating == true:
-		$about_box/AppDesc.hide()
-	elif is_celebrating == false:
-		$about_box/AppDesc.show()
 
 	date_check()
 	change_sound()
@@ -54,6 +49,7 @@ func date_check() -> void:
 	if current_date.month == 9 && current_date.day == 4:
 		celebrate_area.show()
 		stixc_figure.show()
+		$about_box/AppDesc.hide()
 		var app_release_date = 2022
 		var current_year = current_date.year
 		var app_age = current_year - app_release_date
@@ -64,6 +60,7 @@ func date_check() -> void:
 	elif current_date.month == 10 && current_date.day == 23:
 		celebrate_area.show()
 		stixc_figure.show()
+		$about_box/AppDesc.hide()
 		var stixc_birth_year = 2001
 		var current_year = current_date.year
 		var stixc_age = current_year - stixc_birth_year
@@ -74,18 +71,21 @@ func date_check() -> void:
 	elif current_date.month == 10 && current_date.day == 31:
 		celebrate_area.show()
 		stixc_figure.hide()
+		$about_box/AppDesc.hide()
 		datetext.set_text("Happy Halloween!\nThis app is NOT haunted. No worries.")
 		is_celebrating = true
 	# Christmas
 	elif (current_date.month == 12 && current_date.day == 24) or (current_date.month == 12 && current_date.day == 25):
 		celebrate_area.show()
 		stixc_figure.hide()
+		$about_box/AppDesc.hide()
 		datetext.set_text("Merry Christmas!")
 		is_celebrating = true
 	# New Years
 	elif current_date.month == 1 && current_date.day == 1:
 		celebrate_area.show()
 		stixc_figure.show()
+		$about_box/AppDesc.hide()
 		var current_year = current_date.year
 		is_celebrating = true
 
@@ -94,16 +94,19 @@ func date_check() -> void:
 	elif current_date.month == 2 && current_date.day == 14:
 		celebrate_area.show()
 		stixc_figure.hide()
+		$about_box/AppDesc.hide()
 		datetext.set_text("Happy Valentine's Day!")
 		is_celebrating = true
 	# Pride Month
 	elif current_date.month == 6:
 		celebrate_area.show()
-		datetext.set_text("Happy Pride Month!\nYou are loved and amazing!")
+		$about_box/AppDesc.hide()
+		datetext.set_text("Happy Pride Month!\nYou are loved and cool!")
 		is_celebrating = true
 	else:
 		celebrate_area.hide()
 		stixc_figure.hide()
+		$about_box/AppDesc.show()
 		is_celebrating = false
 
 func _on_Stop_button_up() -> void:
