@@ -8,7 +8,7 @@ You can buy StaticNoizer off itch.io! Note that StaticNoizer will still be free 
 ## Installation
 Download the specified binary from the releases tab, and put it somewhere where you can open it easily. I recommend putting it in C: (example: C:/StaticNoizer), and while your at it, make a shortcut to StaticNoizer, and put it on both your desktop (and/or taskbar), and C:\Users\(Your Username)\AppData\Roaming\Microsoft\Windows\Start Menu\Programs as well. Click on StaticNoizer.exe to open it, controls are super simple to understand.
 ## Compiling
-You need Godot 4.1.1 in order to compile StaticNoizer. Clone the repository, I recommend C:, then open Godot and import the folder in which the StaticNoizer source is in. Afterwards, compile it like how you would compile any other Godot app.
+You need Godot 4.2.1 in order to compile StaticNoizer. Clone the repository, I recommend C:, then open Godot and import the folder in which the StaticNoizer source is in. Afterwards, compile it like how you would compile any other Godot app.
 ## Why?
 **The reason this exists is because I have autism & auditory sensory issues, and at the same time, I am currently living somewhere with god awful acoustics.** I keep on hearing noises that annoy the hell out of me, like dogs, birds, etc, and it's gotten so painful for my mind that I wanted to figure out a way to relax and do things without feeling stressed. I don't find relaxed music to work as much as it used to, since I want something that can genreate a wall of sound rather than something that's quiet and mellow. Also loud music like metal, EDM, or any other loud & fast genre can't work because it can cause major ear damage since it's utilizing melodies, which involve specific frequencies, which can result in hearing loss.<br>
 <br>
@@ -18,13 +18,13 @@ After all that, I made the first iteration of StaticNoizer, known as *WhiteNoize
 ## Credits
 stixc - Everything
 <br>
-Freesound Audio Credits:
+**Freesound Audio Credits:**
 <br>
 reklamacja - Ocean Sound Loop
 <br>
 HerbertBoland - River Sound Loop
 <br>
-GammaScorpii - Heavy Rain Sound Loop
+percydood - Heavy Rain Sound Loop
 <br>
 RugetMuller - Air Conditioner Loop
 <br>
