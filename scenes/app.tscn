@@ -367,7 +367,7 @@ offset_right = 244.0
 offset_bottom = 47.0
 theme = ExtResource("2")
 theme_override_font_sizes/font_size = 12
-text = "StaticNoizer - v2.2
+text = "StaticNoizer - v2.2a
 Created by stixc (contact@stixc.lol)"
 
 [node name="AppDesc" type="Label" parent="about_box"]
