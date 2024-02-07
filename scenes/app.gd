@@ -3,12 +3,15 @@ extends Control
 const NOISE_BROWN = 0
 const NOISE_FILTERED_BROWN = 1
 const NOISE_FILTERED_WHITE = 2
-const NOISE_OCEAN = 3
-const NOISE_RIVER = 4
-const NOISE_HEAVY_RAIN = 5
-const NOISE_AIR_CONDITIONER = 6
-const NOISE_BOX_FAN = 7
-const NOISE_DIGISPACE = 8 
+const NOISE_FILTERED_PINK = 3
+const NOISE_OCEAN = 4
+const NOISE_UNDERWATER = 5
+const NOISE_RIVER = 6
+const NOISE_HEAVY_RAIN = 7
+const NOISE_AIR_CONDITIONER = 8
+const NOISE_BOX_FAN = 9
+const NOISE_CRICKETS = 10
+const NOISE_DIGISPACE = 11
 
 var selected_noise = NOISE_BROWN
 @onready var dropdown: OptionButton = $OptionButton

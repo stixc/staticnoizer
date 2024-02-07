@@ -30,6 +30,10 @@ RugetMuller - Air Conditioner Loop
 <br>
 drumuse - Box Fan Loop
 <br>
+cyberthilop - Night Crickets Loop
+<br>
+scratchikken - Underwater Loop
+<br>
 ## Contact
 If you want to contact me, feel free to [shoot me an email](mailto:contact@stixc.lol).
 <br>
